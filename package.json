@@ -1,0 +1,21 @@
+{
+  "name": "pw-base-project",
+  "version": "1.0.0",
+  "description": "This project is used as a basis for Playwright test automation projects. It contains the basic structure for set-ups, teardowns, page object models, and fixtures.",
+  "license": "ISC",
+  "author": "Attila Bulenda",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium-unauth": "playwright test --project=chromium-unauthenticated --headed",
+    "test:chromium-auth": "playwright test --project=chromium-authenticated --headed",
+    "test:api": "playwright test --project=api"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "winston": "^3.19.0"
+  }
+}
